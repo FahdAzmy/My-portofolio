@@ -1,0 +1,153 @@
+/* 
+==================
+table of Contents
+==================
+1. Header Desgin
+2. Button and ICons
+3.Model Pop Up
+4. Responsive Design (mMedia query)
+
+*
+/*==================
+ 1. Header Design 
+===================== 
+*/
+header {
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+header nav ul {
+  display: flex;
+  gap: 16px;
+  background-color: var(--bgHeader);
+  padding: 5px;
+
+  border: 1px solid var(--border);
+  border-radius: 50px;
+  padding: 0.5rem 1.2rem;
+}
+header nav li {
+  list-style: none;
+  padding: 10px;
+  /* margin: 15px; */
+  font-size: 15px;
+}
+header nav a {
+  cursor: pointer;
+  color: var(--title);
+  opacity: 0.9;
+  font-size: 0.85rem;
+  font-weight: bold;
+  transition: 0.3s;
+}
+header a:hover {
+  color: var(--blue);
+  font-size: 1rem;
+}
+
+/* ===================
+2. Icons and Buttons  
+=======================*/
+.icon-menu,
+.mode {
+  background-color: var(--bgHeader);
+  height: 2.6rem;
+  width: 2.4rem;
+  text-align: center;
+  border-radius: 50%;
+  color: var(--subtitel);
+  border: 2px solid var(--border);
+  transition: 0.2s;
+}
+body.light .mode {
+  font-weight: bold;
+  font-size: 19px;
+  color: black;
+
+  border: 1px solid rgba(255, 217, 0, 0.623);
+}
+body.light .mode:hover {
+  border: 1px solid rgb(241, 190, 61);
+}
+.icon-menu:hover,
+.mode:hover {
+  color: var(--title);
+  border: 1px solid var(--title);
+}
+.icon-cross {
+  font-size: 1.3rem;
+  color: var(--subtitel);
+  transition: 0.3s;
+}
+.icon-cross:hover {
+  color: crimson;
+  font-size: 1.5rem;
+  rotate: 180deg;
+}
+.icon-sun {
+  color: goldenrod;
+}
+/*================
+ 3.Model Pop up 
+ ================= */
+.menu {
+  display: none;
+}
+.model {
+  width: 85%;
+  /* height: 50%; */
+  margin: 0 auto;
+  margin-top: 2rem;
+  background-color: var(--secondery);
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+  animation: mymove 0.5s 1;
+}
+.model li {
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.65rem;
+  padding-top: 0.5rem;
+}
+.model li:last-child {
+  border: none;
+}
+body.light .model li a {
+  color: black;
+  font-weight: bold;
+}
+.model li a {
+  font-size: 1rem;
+  cursor: pointer;
+}
+.model ul li:first-child {
+  text-align: right;
+  border: none;
+  margin-bottom: -15px;
+  padding-top: 0.3rem;
+}
+@keyframes mymove {
+  0% {
+    scale: 0;
+  }
+  60% {
+    scale: 1.2;
+  }
+  100% {
+    scale: 1;
+  }
+}
+/*================= 
+4. Media Query 
+===================*/
+@media (max-width: 768px) {
+  nav {
+    display: none;
+  }
+  .menu {
+    display: block;
+  }
+  header {
+    gap: 90px;
+  }
+}

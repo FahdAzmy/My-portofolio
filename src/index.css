@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+
+html {
+  font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  letter-spacing: 0.1px;
+}
+*,
+*::before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --primary: #000;
+  --secondery: #18181b;
+  --border: rgba(63, 63, 70, 0.4);
+  --title: rgb(244 244 245);
+  --subtitel: rgb(161 161 170);
+  --bgHeader: rgb(39, 39, 42);
+  --blue: cornflowerblue;
+  --icon-hover: #d4d4d8;
+  --container-padding: 3rem;
+}
+.light {
+  --primary: rgb(250, 250, 250);
+  --secondery: rgb(255, 255, 255);
+  --border: rgba(202, 202, 202, 0.518);
+  --title: rgb(39 39 42);
+  --subtitel: rgb(82 82 91);
+  --bgHeader: rgb(253, 253, 253);
+  --blue: rgb(0, 149, 246);
+  --icon-hover: #333;
+}
+
+body {
+  background-color: var(--primary);
+  color: #fff;
+}
+.container {
+  border: 2px solid var(--border);
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--secondery);
+  padding: 0 var(--container-padding);
+}
+.divider {
+  border-bottom: 1px solid var(--border);
+  margin: var(--container-padding) 0;
+  width: calc(100% + var(--container-padding) + var(--container-padding));
+  margin-left: calc(var(--container-padding) * -1);
+}
+.flex-b {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+button:hover {
+  cursor: pointer;
+}
+button:active {
+  scale: 0.95;
+}
+.flex-c {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+a {
+  text-decoration: none;
+  transition: 0.2s;
+}
+/* Mdoel Piop up  */
+.fixed {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(40, 40, 48, 0.85);
+  z-index: 11;
+  backdrop-filter: blur(4px);
+}
+ul {
+  list-style: none;
+}
+button {
+  all: unset;
+}
+@media (max-width: 1000px) {
+  .container {
+    --container-padding: 1.2rem;
+    width: 98%;
+    padding: 0 var(--container-padding);
+  }
+  .divider {
+    width: calc(100% + var(--container-padding) + var(--container-padding));
+    margin-left: calc(var(--container-padding) * -1);
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 95%;
+    padding: 0 1.2rem;
+  }
+  .scrolltotop {
+    width: 2rem;
+    height: 2rem;
+    opacity: 0.4;
+  }
+}
+::-webkit-scrollbar {
+  width: 0.88rem;
+}
+
+::-webkit-scrollbar-track {
+  border: 7px solid #292c3b;
+  box-shadow: inset 0 0 2.5px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+
+  background-color: #d4d4d8;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #999;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* for Firefox */
+html {
+  scrollbar-color: var(--secondery) #262f39;
+}
+.scrolltotop {
+  position: fixed;
+  background-color: rgba(25, 118, 210, 0.85);
+  width: 2.6rem;
+  height: 2.6rem;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  bottom: 2rem;
+  right: 3%;
+  transition: 0.5s;
+  border: 1px solid #ffffff4f;
+  color: white;
+  transition: 0.3s;
+}
+.scrolltotop:hover {
+  background-color: rgba(25, 118, 210, 1);
+  margin-bottom: 10px;
+}

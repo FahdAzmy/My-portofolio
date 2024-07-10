@@ -1,0 +1,120 @@
+.contact {
+  display: flex;
+  justify-content: space-between;
+}
+.contact form {
+  margin-top: 50px;
+}
+.contact .left .details .us {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.us span {
+  margin-top: 3px;
+  color: var(--subtitel);
+  font-size: 28px;
+}
+body.light .us span {
+  color: rgb(0, 0, 0);
+}
+.details p {
+  color: var(--subtitel);
+}
+body.light .details h2 {
+  color: black;
+}
+
+.details h2 {
+  font-size: 30px;
+}
+.details {
+  margin-bottom: 20px;
+}
+.inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: var(--subtitel);
+}
+input,
+textarea {
+  all: unset;
+}
+.inputs input,
+textarea {
+  background-color: rgba(63, 63, 70, 0.15);
+  color: var(--subtitel);
+  border: 2px solid var(--border);
+  transition: 0.3s;
+}
+.dark .inputs textarea {
+  background-color: rgba(63, 63, 70, 0.15);
+  color: var(--subtitel);
+}
+.inputs input:first-of-type {
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.light .inputs input,
+textarea {
+  background-color: white;
+  color: black;
+}
+.light .inputs .sub {
+  color: white;
+}
+#email:focus,
+#message:focus {
+  border: 1px solid rgb(45 212 191);
+}
+#email:hover,
+#message:hover {
+  border: 1px solid rgb(45 212 191);
+}
+.inputs textarea {
+  height: 150px;
+  margin-bottom: 20px;
+  padding: 5px;
+  resize: vertical;
+}
+.inputs .sub {
+  width: 100px;
+  text-align: center;
+  color: white;
+  padding: 5px;
+  cursor: pointer;
+  padding: 8px;
+}
+body.light .inputs .sub {
+  background-color: black;
+  border: 1px solid black;
+}
+body.light .inputs .sub:hover {
+  border: 1px solid gray;
+}
+.inputs .sub:hover {
+  border: 1px solid rgb(45 212 191);
+}
+@media (max-width: 800px) {
+  .contact .inputs {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact input:first-of-type {
+    width: 60%;
+  }
+  .contact textarea {
+    width: 100%;
+  }
+}
+@media (max-width: 1110px) {
+  .right .contactAnmotion {
+    display: none;
+  }
+  .contact .inputs {
+    margin-bottom: 20px;
+  }
+}

@@ -1,0 +1,32 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer .left {
+  color: rgb(113 113 122);
+  padding-bottom: 20px;
+}
+.rlinks {
+  display: flex;
+  align-items: center;
+  padding-bottom: 20px;
+}
+.rlinks a {
+  color: var(--subtitel);
+  margin: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.rlinks a:hover {
+  color: var(--blue);
+  margin: 10px;
+  font-weight: 500;
+  margin-top: 5px;
+}
+@media (max-width: 800px) {
+  .footer {
+    flex-direction: column;
+  }
+}

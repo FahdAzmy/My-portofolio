@@ -1,0 +1,151 @@
+/*====================
+table of Section 
+ =====================
+ 1.Left Side
+ 2.Right Side
+ */
+
+.main {
+  display: flex;
+  gap: 3rem;
+  align-items: start;
+  padding: 0 20px;
+}
+
+/* ========================
+1.Left Side
+===========================
+*/
+.left {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.left button {
+  padding: 0.75rem 0;
+  width: 11rem;
+  font-size: 1rem;
+  background-color: #1e1f25;
+  border-radius: 5px;
+  text-align: center;
+  text-transform: capitalize;
+  opacity: 0.5;
+  transition: 0.5s;
+}
+.left button:hover {
+  opacity: 1;
+  margin-top: -5px;
+  border: 1px solid var(--icon-hover);
+}
+button.active {
+  color: white;
+  border: 1px solid var(--blue);
+  padding: 0.8rem o;
+
+  opacity: 1;
+  font-weight: bold;
+  letter-spacing: 0.6px;
+}
+/* ========================
+2.right Side
+===========================
+*/
+
+.main .right {
+  flex-grow: 1;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.right .box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.right .box {
+  /* width: 230px; */
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  transition: 0.3s;
+  background-color: rgba(128, 128, 128, 0.13);
+}
+.right .box:hover {
+  border: 1px solid var(--blue);
+  rotate: 1deg;
+  scale: 1.03;
+}
+.light .right .box:hover {
+  background-color: rgba(246, 246, 246);
+  border: 1px solid rgba(128, 128, 128, 0.342);
+}
+
+.right .title {
+  padding: 8px;
+}
+.right h2 {
+  /* margin: 10px; */
+  color: var(--ttile);
+  font-size: 22px;
+  padding-bottom: 10px;
+}
+.right p {
+  color: var(--subtitel);
+  font-size: 0.8rem;
+  margin-top: 0.3rem;
+  padding-bottom: 5px;
+}
+.right .icons {
+  display: flex;
+  justify-content: space-between;
+  margin: 8px;
+}
+.icons .links {
+  display: flex;
+  gap: 10px;
+  color: var(--subtitel);
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+.more {
+  font-size: 15px;
+  color: var(--blue);
+  cursor: pointer;
+  text-align: center;
+  display: flex;
+  gap: 1px;
+}
+.icon-arrow-right {
+  padding-top: 2px;
+}
+.icons .links a:hover {
+  color: var(--icon-hover);
+  font-size: 1.3rem;
+}
+.more:hover {
+  font-size: 1rem;
+}
+@media (max-width: 767px) {
+  .main {
+    flex-direction: column;
+    padding: 0 10px;
+  }
+  .left button {
+    width: 9rem;
+  }
+  .left {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
+@media (max-width: 1100px) and (min-width: 800px) {
+  .main .right {
+    flex-grow: 1;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+  }
+}
