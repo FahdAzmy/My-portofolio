@@ -56,8 +56,8 @@ export default function Main() {
                   </div>
                   <div className="icons">
                     <div className="links">
-                      <a className="icon-link"></a>
-                      <a className="icon-github"></a>
+                      <a href={item.herf} className="icon-link"></a>
+                      <a href={item.github} className="icon-github"></a>
                     </div>
                     <div>
                       <a className="more">

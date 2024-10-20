@@ -18,21 +18,32 @@ export default function Hero() {
           Software Enginner,FullStack Developer
         </motion.h1>
         <p>
-          I'm Fahd Azmy, a Software Developer Form Egypt, I've Exprince In Mern
-          Stack{" "}
+          Hi, I'm Fahd, a talented Full-stack MERN developer from Egypt. My
+          portfolio showcases my ability to create cutting-edge web
+          applications. Let's connect to discuss how I can contribute to your
+          project's success.
         </p>
         <ul>
           <li>
             <a className="icont icon-twitter" />
           </li>
           <li>
-            <a className="icon icon-instagram" />
+            <a
+              href="https://www.instagram.com/fahd_aazmy/"
+              className="icon icon-instagram"
+            />
           </li>
           <li>
-            <a className="icon icon-github" />
+            <a
+              href="https://github.com/FahdAzmy"
+              className="icon icon-github"
+            />
           </li>
           <li>
-            <a className="icon icon-linkedin-square" />
+            <a
+              href="https://www.linkedin.com/in/fahd-azmy-027aa721b/"
+              className="icon icon-linkedin-square"
+            />
           </li>
         </ul>
       </div>
