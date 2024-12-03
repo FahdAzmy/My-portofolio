@@ -7,12 +7,21 @@ export const Projects = [
     herf: "https://main--inquisitive-conkies-6484de.netlify.app/",
     github: "https://github.com/FahdAzmy/Salary-Tracker",
   },
+
   {
     projectTitle: "PadelCourt",
     category: "FullStack (MERN)",
     imgPath: "/Projects/PadelCourt.png",
     desc: "The Padel Court app allows users to book padel courts, view available time slots, and manage court bookings dynamically for each day.",
     github: "https://github.com/FahdAzmy/ThePadelCourt",
+  },
+  {
+    projectTitle: "Talkie  ChatApp",
+    category: "FullStack (MERN)",
+    imgPath: "/Projects/chtapp.png",
+    desc: "Talkie is a real-time chat app that enables seamless communication between users, supporting features like secure, instant messaging",
+    herf: "",
+    github: "https://github.com/FahdAzmy/Chat-App",
   },
   {
     projectTitle: " Leon HTML & CSS Tamplate",
